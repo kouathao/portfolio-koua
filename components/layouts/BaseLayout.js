@@ -10,8 +10,9 @@ const BaseLayout = (props) => {
     <React.Fragment>
       <Head>
         <title>{title}</title>
-        <meta name="description" content="My name is Filip Jerga and I am an experienced software engineer and freelance developer. I have a Master's degree in Artificial Intelligence and several years of experience working on a wide range of technologies and projects from C++ development for ultrasound devices to modern mobile and web applications in React and Angular. Throughout my career, I have acquired advanced technical knowledge and the ability to explain programming topics clearly and in detail to a broad audience. I invite you to take my course, where I have put a lot of effort to explain web and software engineering concepts in a detailed, hands-on and understandable way." />
+        <meta name="description" content="My name is Koua Thao and I am an experienced software engineer and freelance developer. I have a Master's degree in Artificial Intelligence and several years of experience working on a wide range of technologies and projects from C++ development for ultrasound devices to modern mobile and web applications in React and Angular. Throughout my career, I have acquired advanced technical knowledge and the ability to explain programming topics clearly and in detail to a broad audience. I invite you to take my course, where I have put a lot of effort to explain web and software engineering concepts in a detailed, hands-on and understandable way." />
         <meta name="keywords" content="jerga portfolio, jerga developer, jerga freelancig, jerga programming"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
         <meta property="og:title" content="Filip Jerga - programmer, developer, bloger" />
         <meta property="og:locale" content="en_EU" />
         <meta property="og:url" content={`${process.env.BASE_URL}`}/>
