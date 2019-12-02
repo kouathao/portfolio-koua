@@ -14,7 +14,7 @@ class Index extends React.Component {
       isFlipping: false
     }
 
-    this.roles = ['Developer', 'Tech Lover', 'Team Player', 'Frontend Developer', 'React.js', 'Angular', 'And many more'];
+    this.roles = ['Developer', 'Tech Lover', 'Team Player', 'Frontend Developer', 'React.js', 'Angular', 'And many more!'];
   }
 
   componentDidMount() {
@@ -30,7 +30,7 @@ class Index extends React.Component {
       this.setState({
         isFlipping: !this.state.isFlipping
       });
-    }, 60000);
+    }, 7000);
   }
 
 
@@ -38,6 +38,7 @@ class Index extends React.Component {
   render() {
     const { isAuthenticated, user } = this.props.auth;
     const { isFlipping } = this.state;
+
 
     return (
       <BaseLayout className={`cover ${isFlipping ? 'cover-1' : 'cover-0'}`} {...this.props.auth}
@@ -56,7 +57,7 @@ class Index extends React.Component {
                       <div className="hero-section-content">
                         <h2> Full Stack Web Developer </h2>
                         <div className="hero-section-content-intro">
-                          Have a look at my portfolio and job history.
+                          Have a look at my portfolio and resume.
                         </div>
                       </div>
                       <img alt="Guy programming welcome picture" className="image" src="/static/images/section-1.jpg"/>
@@ -66,9 +67,9 @@ class Index extends React.Component {
                     </div>
                     <div className="back">
                       <div className="hero-section-content">
-                        <h2> Get Your Projects Done </h2>
+                        <h2> Let's get it done together </h2>
                         <div className="hero-section-content-intro">
-                          Profesional and top quality service in web development.
+                          Shoot me an email. <a className="text-white" href="mailto:kouathao09@gmail.com">kouathao09@gmail.com</a>
                         </div>
                       </div>
                       <img alt="Guy programming welcome picture" className="image" src="/static/images/section-2.jpg"/>
@@ -84,7 +85,7 @@ class Index extends React.Component {
                   <h1>
                     { isAuthenticated && <span> <b> {user.name} </b> </span> }
                     Welcome to the portfolio website of Koua Thao.
-                    Get informed, collaborate and discover projects I was working on through the years!
+                     Discover projects that I was working on throughout the years!
                   </h1>
                 </div>
                 <Typed
@@ -102,7 +103,7 @@ class Index extends React.Component {
 
                 <div className="hero-welcome-bio">
                   <h2>
-                    Let's take a look on my work.
+                    Let's take a look my work.
                   </h2>
                 </div>
               </Col>
