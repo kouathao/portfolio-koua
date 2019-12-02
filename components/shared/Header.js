@@ -110,20 +110,20 @@ export default class Header extends React.Component {
     return (
       <div>
         <Navbar className={`port-navbar port-nav-base absolute ${className} ${menuOpenClass}`} color="transparent" dark expand="md">
-          <NavbarBrand className="port-navbar-brand" href="/">Filip Jerga</NavbarBrand>
+          <NavbarBrand className="port-navbar-brand" href="/">Koua Thao</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem className="port-navbar-item">
                 <BsNavLink route="/" title="Home" />
               </NavItem>
-              <NavItem className="port-navbar-item">
+              {/* <NavItem className="port-navbar-item">
                 <BsNavLink route="/about" title="About" />
-              </NavItem>
+              </NavItem> */}
               <NavItem className="port-navbar-item">
                 <BsNavLink route="/portfolios" title="Portfolio" />
               </NavItem>
-              {this.renderBlogMenu()}
+              {/* {this.renderBlogMenu()} */}
               <NavItem className="port-navbar-item">
                 <BsNavLink route="/cv" title="Cv" />
               </NavItem>
